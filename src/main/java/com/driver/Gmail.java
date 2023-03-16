@@ -80,7 +80,7 @@ public class Gmail extends Email {
         Iterator<mails> it = inbox.iterator();
         while (it.hasNext()){
             mails mail = it.next();
-            if(mail.date().getTime() >= start.getTime() &&
+            if(mail.getDate().getTime() >= start.getTime() &&
                     mail.getDate().getTime() <= end.getTime())
                 count++;
         }
