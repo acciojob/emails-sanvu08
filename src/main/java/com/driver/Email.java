@@ -30,11 +30,11 @@ public class Email {
         // 4. It contains at least one digit
         // 5. It contains at least one special character.
         // Any character apart from alphabets and digits is a special character
-        if(newPassword.length() < 8){
-            System.out.println("Password must be of at least 8 character.");
-            return;
-        }
-        else if(this.password.equals(oldPassword)){
+//        if(newPassword.length() < 8){
+//            System.out.println("Password must be of at least 8 character.");
+//            return;
+//        }
+        if(newPassword.length() >= 8 && this.password.equals(oldPassword)){
             if(checkDigit(newPassword) && checkLowerCase(newPassword) &&
             checkUpperCase(newPassword) && checkSpecialCharacter(newPassword))
                 this.password = newPassword;
