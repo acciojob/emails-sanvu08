@@ -3,7 +3,7 @@ package com.driver;
 import java.util.Date;
 
 public class mails {
-    private Date date;
+    public Date date;
     private String senderId;
     private String message;
 

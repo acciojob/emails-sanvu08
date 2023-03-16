@@ -70,7 +70,7 @@ public class Gmail extends Email {
         int count=0;
         while(it.hasNext()){
             mails obj=it.next();
-            if(obj.getDate().getTime()>=start.getTime() && obj.getDate().getTime()<=end.getTime()){
+            if(obj.date.getTime()>=start.getTime() && obj.date.getTime()<=end.getTime()){
                 count++;
             }
         }
