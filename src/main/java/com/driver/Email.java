@@ -4,7 +4,6 @@ public class Email {
 
     private String emailId;
     private String password;
-
     public Email() {
     }
 
@@ -34,9 +33,10 @@ public class Email {
 //            System.out.println("Password must be of at least 8 character.");
 //            return;
 //        }
-        if(newPassword.length() >= 8 && this.password.equals(oldPassword)){
-            if(checkDigit(newPassword) && checkLowerCase(newPassword) &&
-            checkUpperCase(newPassword) && checkSpecialCharacter(newPassword))
+        if( this.password.equals(oldPassword)){
+            if(newPassword.length()>=8 && checkDigit(newPassword) &&
+                    checkLowerCase(newPassword) && checkUpperCase(newPassword) &&
+                    checkSpecialCharacter(newPassword))
                 this.password = newPassword;
         }
     }
@@ -82,3 +82,5 @@ public class Email {
         return flag;
     }
 }
+
+
